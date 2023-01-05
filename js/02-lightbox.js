@@ -10,7 +10,7 @@ const cardsMarcup = createGalleryCards(galleryItems)
 
 paletteContainer.insertAdjacentHTML('beforeend', cardsMarcup);
 
-paletteContainer.addEventListener('click', onPaletteContainerClick);
+
 
 
 function createGalleryCards (galleryItems){
@@ -30,14 +30,8 @@ return galleryItems.map(({preview, original, description }) => {
 .join("")
 
 }
-function onPaletteContainerClick (e){
-    e.preventDefault();
-    if (e.target.nodeName !== 'IMG') {
-		return
-	}
- 
 
-}
+
 new SimpleLightbox('.js-palette a', {
 	captionDelay: 250
 })

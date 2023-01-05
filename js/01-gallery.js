@@ -47,6 +47,7 @@ gallery.addEventListener('click', e => {
 })
 */
 
+
 const paletteContainer = document.querySelector('.js-palette');
 const cardsMarcup = createGalleryCards(galleryItems)
 
